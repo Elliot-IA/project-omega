@@ -1,0 +1,54 @@
+import '../styles/Subpage.styles.css';
+import { useNavigate } from 'react-router-dom';
+
+const Subpage = ({ text, images, title }) => {
+  
+  const navigate = useNavigate();
+  console.log(images)
+  const handleReturnToHome = () => {
+    navigate('/');
+    return
+  }
+
+  return (
+    <div className="subpageContainer">
+      <h1 id="subpageTitle">{title}</h1>
+      <div className="subpageContentContainer">
+        <div id="leftContainer">
+          <div id="backgroundContainter">
+            <div id="backgroundTitle">Background</div> 
+            <div id="backgroundText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+          </div>
+          <div id="publicationsContainter">
+          <div id="publicationsTitle">Latest Publications in Field</div> 
+            <div id="publicationsList">  
+              Publication 1!   ::   <a href="https://www.example.com">publication link</a><br/>
+              Publication 2!   ::   <a href="https://www.example.com">publication link</a><br/>
+              Publication 3!   ::   <a href="https://www.example.com">publication link</a><br/>
+              Publication 4!   ::   <a href="https://www.example.com">publication link</a><br/>
+
+</div>
+          </div>
+        </div>
+
+      
+        <div id="rightContainer">
+          <div className="imageGrid">
+            {images.map((image, index) => {
+              return (
+                <img className="subpageImg" src={require("../" + image)} />
+              )
+            })}
+          </div>
+        </div>
+      </div>
+
+
+      <button onClick={handleReturnToHome} id="homeButton">Back to Home</button>
+    </div>
+
+  )
+}
+
+export default Subpage
