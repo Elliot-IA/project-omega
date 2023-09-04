@@ -2,11 +2,19 @@
     cursor: pointer;
     margin: 50px;
 }
+#root{
+    background-color: blue;
+}
 .subpageContainer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    width: 50%;
+    background-color: white;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 0px);
 }
 .subpageContentContainer {
     display: flex;
