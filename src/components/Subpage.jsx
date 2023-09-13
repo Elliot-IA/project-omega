@@ -55,7 +55,7 @@ const Subpage = ({ text, images, title }) => {
 
       <button onClick={handleReturnToHome} id="homeButton">Back to Home</button>
       
-      <script>document.getElementById("root").style = "background-color: blue";</script>
+      <script>document.getElementById("root").class = "body-background";</script>
     </div>
     </div>
 
