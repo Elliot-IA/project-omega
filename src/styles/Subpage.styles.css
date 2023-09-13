@@ -3,7 +3,7 @@
     margin: 50px;
 }
 #root{
-    background-color: blue;
+    background-color: white;
 }
 .subpageContainer {
     display: flex;
@@ -15,10 +15,15 @@
     left: 50%;
     position: absolute;
     transform: translate(-50%, 0px);
+    box-shadow: 0px 0px 15px 9px white;
+    margin-top: 50px;
+    margin-bottom: 350px;
+    border-radius: 40px;
+    border: 4px solid black;
 }
 .subpageContentContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-between;
     align-items: flex-start;
     width: 100%;
@@ -40,7 +45,7 @@
     box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
 }
 #leftContainer{
-    width: 50%;
+    width: 92%;
     height: 100%;
     display: inline-block;
     padding: 24px;
@@ -56,4 +61,7 @@
 #backgroundTitle, #publicationsTitle{
     font-weight: bold;
     margin: 20px;
+}
+.subpageBodyContainer{
+    height: 180vh;
 }

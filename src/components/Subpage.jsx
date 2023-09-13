@@ -6,11 +6,19 @@ const Subpage = ({ text, images, title }) => {
   const navigate = useNavigate();
   console.log(images)
   const handleReturnToHome = () => {
+    document.getElementById("root").style = "background-color: white"; 
     navigate('/');
     return
   }
 
   return (
+  <div className="subpageBodyContainer">
+    <div className='home-header'>
+        <button  class="btn btn-primary">Interaction Codenomics</button>
+        <button class="btn btn-primary">Activity Based Codenomics</button>
+        <button class="btn btn-primary">Structural Codenomics</button>
+        <button class="btn btn-primary">PTM Codenomics</button>
+    </div>
     <div className="subpageContainer">
       <h1 id="subpageTitle">{title}</h1>
       <div className="subpageContentContainer">
@@ -46,6 +54,9 @@ const Subpage = ({ text, images, title }) => {
 
 
       <button onClick={handleReturnToHome} id="homeButton">Back to Home</button>
+      
+      <script>document.getElementById("root").style = "background-color: blue";</script>
+    </div>
     </div>
 
   )

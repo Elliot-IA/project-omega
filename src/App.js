@@ -33,7 +33,7 @@ const propImages = {
     "assets/Figure_5.2.png",
     "assets/Figure_5.3.png",
     "assets/Figure_5.4.png"
-  ],
+  ], 
   "temporal-codenomics": [
     "assets/Figure_6.1.png",
     "assets/Figure_6.2.png",
