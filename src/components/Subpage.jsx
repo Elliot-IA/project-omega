@@ -22,13 +22,7 @@ const Subpage = ({ text, images, title }) => {
 
 
     <div className='home-header'>
-        <Button variant="primary">Primary</Button>{'...'}
-        <h1>
-        Example heading
-        <Badge bg="secondary" as={Button}>
-          New
-        </Badge>
-      </h1>
+
         <button  class="btn btn-primary">Interaction Codenomics</button>
         <button class="btn btn-primary">Activity Based Codenomics</button>
         <button class="btn btn-primary">Structural Codenomics</button>
