@@ -1,5 +1,7 @@
 import '../styles/Subpage.styles.css';
 import { useNavigate } from 'react-router-dom';
+import Button from 'react-bootstrap/Button';
+import Badge from 'react-bootstrap/Badge';
 
 const Subpage = ({ text, images, title }) => {
   
@@ -13,11 +15,32 @@ const Subpage = ({ text, images, title }) => {
 
   return (
   <div className="subpageBodyContainer">
+      <script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js" crossorigin></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js"
+      crossorigin></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/react-bootstrap@next/dist/react-bootstrap.min.js"
+      crossorigin></script>
+
+    <script>var Alert = ReactBootstrap.Alert;</script>
+
+
+
     <div className='home-header'>
-        <button  class="btn btn-primary">Interaction Codenomics</button>
-        <button class="btn btn-primary">Activity Based Codenomics</button>
-        <button class="btn btn-primary">Structural Codenomics</button>
-        <button class="btn btn-primary">PTM Codenomics</button>
+        <Button variant="primary">Primary</Button>{'...'}
+        <h1>
+        Example heading
+        <Badge bg="secondary" as={Button}>
+          New
+        </Badge>
+      </h1>
+        <Button  class="btn btn-primary">Interaction Codenomics</Button>
+        <Button class="btn btn-primary">Activity Based Codenomics</Button>
+        <Button class="btn btn-primary">Structural Codenomics</Button>
+        <Button class="btn btn-primary">PTM Codenomics</Button>
     </div>
     <div className="subpageContainer">
       <h1 id="subpageTitle">{title}</h1>
@@ -56,18 +79,6 @@ const Subpage = ({ text, images, title }) => {
       <button onClick={handleReturnToHome} id="homeButton">Back to Home</button>
       
       <script>document.getElementById("root").class = "body-background";</script>
-
-      <script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js" crossorigin></script>
-
-<script
-  src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js"
-  crossorigin></script>
-
-<script
-  src="https://cdn.jsdelivr.net/npm/react-bootstrap@next/dist/react-bootstrap.min.js"
-  crossorigin></script>
-
-<script>var Alert = ReactBootstrap.Alert;</script>
     </div>
     </div>
 
