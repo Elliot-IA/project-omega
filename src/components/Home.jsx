@@ -1,5 +1,7 @@
 import '../styles/Home.styles.css';
 import { useNavigate } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const Home = () => {
 
@@ -11,7 +13,6 @@ const Home = () => {
       <div className='home-header'>Welcome to the&nbsp;<i>Functional Codenomics</i>&nbsp;Additional Resources Page!</div>
       
       <div className="circular-menu">
-
         <div className="menu-item item-1 card">
           <img className="imgSize card-front" src={require("../assets/Figure_1.png")} alt=""/>
           <button className="card-back" onClick = {() =>{ document.getElementById("root").style = "background-color: blue"; navigate('/interaction-codenomics'); }}>Interaction Codenomics</button>
