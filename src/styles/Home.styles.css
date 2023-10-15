@@ -131,6 +131,13 @@
     transform: rotateY(180deg);
 }
 
+.card{
+    position: absolute !important;
+}
 .card:hover .card-back {
     transform: rotateY(0);
+}
+.card-front, .card-back{
+    position: unset;    
+    border-radius: 100%;
 }
