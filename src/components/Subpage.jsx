@@ -19,12 +19,6 @@ const Subpage = ({ text, images, title }) => {
       src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js"
       crossorigin></script>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/react-bootstrap@next/dist/react-bootstrap.min.js"
-      crossorigin></script>
-
-    <script>var Alert = ReactBootstrap.Alert;</script>
-
 
 
     <div className='home-header'>
@@ -35,10 +29,10 @@ const Subpage = ({ text, images, title }) => {
           New
         </Badge>
       </h1>
-        <Button  class="btn btn-primary">Interaction Codenomics</Button>
-        <Button class="btn btn-primary">Activity Based Codenomics</Button>
-        <Button class="btn btn-primary">Structural Codenomics</Button>
-        <Button class="btn btn-primary">PTM Codenomics</Button>
+        <button  class="btn btn-primary">Interaction Codenomics</button>
+        <button class="btn btn-primary">Activity Based Codenomics</button>
+        <button class="btn btn-primary">Structural Codenomics</button>
+        <button class="btn btn-primary">PTM Codenomics</button>
     </div>
     <div className="subpageContainer">
       <h1 id="subpageTitle">{title}</h1>
