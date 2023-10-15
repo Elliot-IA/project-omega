@@ -1,7 +1,5 @@
 import '../styles/Subpage.styles.css';
 import { useNavigate } from 'react-router-dom';
-import Button from 'react-bootstrap/Button';
-import Badge from 'react-bootstrap/Badge';
 
 const Subpage = ({ text, images, title }) => {
   
